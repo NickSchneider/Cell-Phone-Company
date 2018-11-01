@@ -26,8 +26,9 @@ public class IncomingPhoneCall extends PhoneCall
     @Override
     public void displayCallInfo()
     {
+        System.out.println("Incoming Phone Call");
         System.out.println("Phone Number: " + getPhoneNumber());
         System.out.println("Call rate: " + price);        
-        System.out.println("Price of call: " + price);
+        System.out.println("Price of call: " + price + "\n");
     }
 }

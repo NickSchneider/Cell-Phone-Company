@@ -5,8 +5,9 @@ public class OutgoingPhoneCall extends PhoneCall
     double time;
     double totalPrice;
     OutgoingPhoneCall(String phoneNum, double time)
-    {
+    {        
         super(phoneNum);
+        this.time = time;
     }
     @Override
     public String getPhoneNumber()
@@ -28,9 +29,10 @@ public class OutgoingPhoneCall extends PhoneCall
     @Override
     public void displayCallInfo()
     {
+        System.out.println("Outgoing Phone Call");
         System.out.println("Phone Number: " + getPhoneNumber());
         System.out.println("Rate per minute: " + price);
         System.out.println("Call time: " + time + " minutes");
-        System.out.println("Price of call: " + getCallPrice());
+        System.out.println("Price of call: " + getCallPrice() + "\n");
     }
 }
